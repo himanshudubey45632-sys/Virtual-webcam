@@ -7,7 +7,7 @@ cap = cv2.VideoCapture(1)
 # 2. Enforce 360p resolution for low Pentium CPU usage
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 360)
-cap.set(cv2.CAP_PROP_FPS, 24)
+cap.set(cv2.CAP_PROP_FPS, 60)
 
 # 3. Create a solid black background
 backdrop = np.zeros((360, 640, 3), dtype=np.uint8)
