@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 
-# 1. Open webcam
-cap = cv2.VideoCapture(0)
+# Change 0 to 1 (or 2 if 1 doesn't work) so OpenCV selects Iriun Webcam
+cap = cv2.VideoCapture(1)
 
 # 2. Enforce 360p resolution for low Pentium CPU usage
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
